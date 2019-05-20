@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: 'Roboto', sans-serif;  
+}
+
+#control-buttons{
+  background-color: #222;
+  padding: 1%;
+  border-radius: 5px;
+  position: absolute;
+  top: 5vh;
+  left: 550px;
+  color: #FFF;
+}
+
+#control-buttons #yaw{
+  color: #0F0;   
+}
+
+#control-buttons #pitch{
+  color: #F00;   
+}
+
+#control-buttons #roll{
+  color: #00F;   
+}

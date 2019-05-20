@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div id="control-buttons">
+
+      <input type="radio" name="config" value="yxz" onclick="handleClick(this.value)">Yaw->Pitch->Roll<br>
+      <input type="radio" name="config" value="xyz" onclick="handleClick(this.value)">Pitch->Yaw->Roll<br>
+      <input type="radio" name="config" value="xzy" onclick="handleClick(this.value)">Pitch->Roll->Yaw<br>  
+
+      <p id="yaw">Yaw (Y): <span id="yaw-text"></span></p>
+      <input id="yaw-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('Y', this.value)">
+
+      <p id="pitch">Pitch (X): <span id="pitch-text"></span></p>
+      <input id="pitch-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('X', this.value)">
+
+      <p id="roll">Roll (Z): <span id="roll-text"></span></></p>
+      <input id="roll-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('Z', this.value)">
+
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
