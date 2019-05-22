@@ -38,8 +38,8 @@ function draw() {
     case 'yxz':
       yxz();
       break;
-    case 'xyz':
-      xyz();
+    case 'zyx':
+      zyx();
       break;
     case 'xzy':
       xzy();
@@ -125,19 +125,19 @@ function yxz(){
   pop();
 }
 
-function xyz(){
+function zyx(){
   push();
-  // X - Axis
-  rotateX(pitch);
-  drawGimbal('outer', 'x');
+  // Z - Axis
+  rotateZ(roll);
+  drawGimbal('outer', 'z');
   push();
   // Y - Axis
   rotateY(yaw);
   drawGimbal('middle', 'y');
   push();
-  // Z - Axis
-  rotateZ(roll);
-  drawGimbal('inner', 'z');
+  // X - Axis
+  rotateX(pitch);
+  drawGimbal('inner', 'x');
   drawXWing();
   pop();
   pop();

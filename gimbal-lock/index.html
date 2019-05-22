@@ -8,16 +8,16 @@
     <div id="control-buttons">
 
       <input type="radio" name="config" value="yxz" onclick="handleClick(this.value)">Yaw->Pitch->Roll<br>
-      <input type="radio" name="config" value="xyz" onclick="handleClick(this.value)">Pitch->Yaw->Roll<br>
+      <input type="radio" name="config" value="zyx" onclick="handleClick(this.value)">Roll->Yaw->Pitch<br>
       <input type="radio" name="config" value="xzy" onclick="handleClick(this.value)">Pitch->Roll->Yaw<br>  
 
-      <p id="yaw">Yaw (Y): <span id="yaw-text"></span></p>
+      <p id="yaw">Yaw (Y): <span id="yaw-text">0</span></p>
       <input id="yaw-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('Y', this.value)">
 
-      <p id="pitch">Pitch (X): <span id="pitch-text"></span></p>
+      <p id="pitch">Pitch (X): <span id="pitch-text">0</span></p>
       <input id="pitch-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('X', this.value)">
 
-      <p id="roll">Roll (Z): <span id="roll-text"></span></></p>
+      <p id="roll">Roll (Z): <span id="roll-text">0</span></></p>
       <input id="roll-range" type="range" min="-360" max="360" step="15" value = 0 oninput="degreesChange('Z', this.value)">
 
     </div>
