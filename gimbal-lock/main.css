@@ -1,8 +1,14 @@
 html, body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   background: #000;
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
+}
+
+canvas{
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
 }
 
 #control-buttons{
@@ -10,8 +16,8 @@ html, body {
   padding: 1%;
   border-radius: 5px;
   position: absolute;
-  top: 5vh;
-  left: 550px;
+  top: 30vh;
+  right: 25vw;
   color: #FFF;
 }
 
